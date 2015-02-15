@@ -1,0 +1,17 @@
+body {
+    font-family: 'Droid Sans', sans-serif;
+    margin: 1em;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+div {
+    margin: 1em;
+}
