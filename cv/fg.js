@@ -1,0 +1,158 @@
+var resume = {
+    name: "<a href=\"/\">Felix Geller</a>",
+    summary: "Fluent in German and English, intermediate in French. Avid long-distance runner.",
+    email: "fgeller-at-gmail-dot-com",
+    github: "https://github.com/fgeller",
+    linkedin: "https://www.linkedin.com/in/felixgeller",
+    professionalExperience: [
+	{
+	    start: new Date("2012-12-10"),
+	    title: "Software Engineer",
+	    role: "Full-time",
+	    company: "Movio Ltd.",
+	    location: "Auckland, NZ",
+	    summary: [
+		"Localized primary web application to enable support for new languages.",
+		"Ported performance critical application component to column-oriented database.",
+		"Technologies include Scala, Java, PHP, gettext, akka, Apache Cassandra, InfiniDB, MySQL.",
+	    ],
+	},
+	{
+	    start: new Date("2011-09-01"),
+	    end: new Date("2012-10-30"),
+	    title: "Software Developer",
+	    role: "Full-time",
+	    company: "IPTEGO GmbH",
+	    location: "Berlin, D",
+	    summary: [
+		"Developed a learning, multi-process software to detect and prevent fraudulent use of VoIP networks.",
+		"Independently designed and developed web application for monitoring, inspection and configuration.",
+		"Technologies included Python, Redis, Flask, SQLAlchemy, ExtJS, ZMQ, Javascript.",
+	    ],
+	},
+	{
+	    start: new Date("2011-02-01"),
+	    end: new Date("2011-04-30"),
+	    title: "Software Developer",
+	    role: "Internship",
+	    company: "SAP Labs",
+	    location: "Palo Alto, CA",
+	    summary: [
+		"Developed compiler-frontend and AST transformer for research database access language.",
+		"Technologies included the <a href=\"http://www.newspeaklanguage.org\">Newspeak</a> programming language and Javascript.",
+	    ],
+	},
+	{
+	    start: new Date("2008-11-01"),
+	    end: new Date("2010-02-28"),
+	    title: "Software Developer",
+	    role: "Part-time",
+	    company: "Finn GmbH",
+	    location: "Berlin, D",
+	    summary: [
+		"Transformation of semi-structured dictionary data for optimized search access on pons.eu.",
+		"Developed web application interface for community-driven dictionary.",
+		"Technologies included XSLT, JEE, Ruby on Rails and Javascript.",
+	    ],
+	},
+	{
+	    start: new Date("2008-03-01"),
+	    end: new Date("2008-09-30"),
+	    title: "Software Developer",
+	    role: "Internship",
+	    company: "SAP Research",
+	    location: "St. Gallen, CH",
+	    summary: [
+		"Developed a mobile phone application to enable end-user access to SAP business services.",
+		"Developed an OASIS standard-compliant web-service messaging component to integrate SAP services.",
+		"Technologies included SAP’s Netweaver JEE (JAX-WS, JAXB, etc.) and Google’s Android platforms.",
+	    ],
+	},
+	{
+	    start: new Date("2005-03-01"),
+	    end: new Date("2006-03-30"),
+	    title: "Web Developer",
+	    role: "Working student",
+	    company: "Worcester Polytechnic Institute",
+	    location: "Worcester, USA",
+	    summary: [
+		"Developed web based interface for managing sensor readings from fire safety experiments.",
+		"Technologies included Apache Tomcat, Java Servlets, JSP and Oracle Database.",
+	    ],
+	},
+	{
+	    start: new Date("2003-09-01"),
+	    end: new Date("2004-06-01"),
+	    title: "Zivildienstleistender",
+	    company: "Bayrisches Rotes Kreuz",
+	    location: "Bad Neustadt, D",
+	    summary: [
+		"Assisted transport as community service.",
+	    ],
+	},
+	{
+	    start: new Date("2003-07-01"),
+	    end: new Date("2003-08-31"),
+	    title: "Software Developer",
+	    role: "Internship",
+	    company: "Charles River Laboratories",
+	    location: "Wilmington, USA",
+	    summary: [
+		"Designed and implemented a phone directory with support for user-level privileges.",
+		"Technologies included Apache Tomcat, Java Servlets, JSP, MS SQL Database and MS Access.",
+	    ],
+	},
+    ],
+    degrees: [
+	{ // M.Sc.
+	    start: new Date("2007-10-01"),
+	    end: new Date("2010-04-01"),
+	    institution: "Hasso Plattner Institut",
+	    degree: "Master of Science",
+	    summary: ["Outstanding in IT-Systems Engineering"],
+	    location: "Potsdam, D",
+	},
+	{ // B.Sc.
+	    start: new Date("2004-08-01"),
+	    end: new Date("2007-05-01"),
+	    degree: "Bachelor of Science",
+	    summary: ["High Distinction in Computer Science"],
+	    institution: "Worcester Polytechnic Institute",
+	    location: "Worcester, USA",
+	},
+	{ // Abi
+	    start: new Date("1994-09-01"),
+	    end: new Date("2003-06-01"),
+	    degree: "Abitur",
+	    summary: ["Good with Honors Courses in Mathematics and Physics"],
+	    institution: "Gymnasium",
+	    location: "Bad Königshofen, D",
+	},
+    ],
+    academicExperience: [
+	{ // TA @HPI.
+	    start: new Date("2009-10-01"),
+	    end: new Date("2010-03-31"),
+	    title: "Teaching Assistant",
+	    institution: "Hasso Plattner Institut",
+	    location: "Potsdam, D",
+	},
+	{ // RA @Brown.
+	    start: new Date("2006-07-01"),
+	    end: new Date("2006-08-31"),
+	    title: "Resarch Assistant",
+	    institution: "Brown University",
+	    location: "Providence, USA",
+	},
+	{ // Ph.D.
+	    start: new Date("2010-04-01"),
+	    end: new Date("2011-02-01"),
+	    title: "Ph.D. Candidate",
+	    institution: "Hasso Plattner Institut",
+	    location: "Potsdam, D",
+	},
+    ],
+};
+
+
+drawCV(resume);
