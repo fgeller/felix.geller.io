@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+    <script type="text/javascript">
+      var html = document.getElementsByTagName('html')[0];
+      var images = ['grass.jpg', 'sunset.jpg', 'tau.jpg'];
+      var index = Math.round(Math.random() * (images.length-1));
+      html.style['background'] = 'url(\'../i/' + images[index] + '\') no-repeat center center fixed';
+    </script>
   </head>
 
   <body>
