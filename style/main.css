@@ -1,5 +1,5 @@
 html {
-    background: url('../i/backdrop.jpg') no-repeat center center fixed;
+    background: url('../i/grass.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: #2980b9;
+    color: #2c3e50;
     text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ div {
 }
 
 #link-container {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15pt;
     padding: 0.25em;
     width: 100pt;
