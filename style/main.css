@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Droid Sans', sans-serif;
+    font-family: sans-serif;
     margin: 2em;
 }
 
@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-    color: #c0392b;
+    color: #3F51B5;
 }
 
 div {
@@ -27,6 +27,9 @@ div {
 #link-container {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15pt;
-    padding: 0.25em;
-    width: 100pt;
+    padding: 0.5em;
+    margin: 0 auto;
+    width: 120pt;
+    font-size: 28pt;
+    text-align: center;
 }
