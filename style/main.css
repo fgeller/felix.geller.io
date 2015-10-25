@@ -7,8 +7,9 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 2em;
+    text-align: center;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 }
 
 a:hover {
-    color: #3F51B5;
+    color: #4CAF50;
 }
 
 div {
@@ -25,11 +26,13 @@ div {
 }
 
 #link-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 15pt;
-    padding: 0.5em;
+    background-color: #fafafa; /*rgba(25, 31, 71, 0.8);*/
+    border-radius: 12pt;
+    padding: .75em;
     margin: 0 auto;
-    width: 120pt;
-    font-size: 28pt;
-    text-align: center;
+    max-width: 200pt;
+    display: inline-block;
+    font-size: 12pt;
+    text-align: left;
+    line-height: 1.3em;
 }
