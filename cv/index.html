@@ -4,49 +4,185 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>/cv</title>
+    <title>felix geller - resume</title>
 
-		<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway" rel="stylesheet">
-
-    <link rel="stylesheet" href="lib/font-awesome/font-awesome.min.css">
-    <link rel="stylesheet" href="d3-cv.css">
-
-    <script src="lib/d3/d3.min.js" charset="utf-8"></script>
-    <script src="d3-cv.js" charset="utf-8"></script>
-
-    <style>
-      a {
-        color: #27ae60;
-      }
-
-      a:hover {
-        color: #f1c40f;
-      }
-
-      .github-fork-ribbon a:hover {
-        background-color: #f1c40f;
-      }
-
-      div.github-fork-ribbon {
-        background-color: #2c3e50;
-      }
-    </style>
-
-    <link rel="stylesheet" href="gh-fork-ribbon.css">
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" href="gh-fork-ribbon.ie.css">
-    <![endif]-->
-    <!-- END COPYING HERE -->
+    <link rel="stylesheet" href="app.css">
+    <script src="d3.js" charset="utf-8"></script>
+    <link href="css/flag-icon.css" rel="stylesheet">
   </head>
 
   <body>
-    <div id="cv-container"></div>
-    <script src="fg.js" charset="utf-8"></script>
-    <div class="github-fork-ribbon-wrapper left-bottom">
-      <div class="github-fork-ribbon">
-        <a href="https://github.com/fgeller/d3-cv.js">Fork me on GitHub</a>
+    <div id="listing">
+      <div id="timeline-container"><svg id="timeline"></svg></div>
+
+      <div id="summary">
+        <div>I'm a passionate software engineer and avid runner, always looking for a new challenge.</div>
+        <div>I enjoy being part of a great team and aim for simplicity in my solutions.</div>
       </div>
+
+      <div id="job-title">Professional experience</div>
+
+      <div class="job-entry" id="job-movio">
+        <div class="job-title">Team Lead Software Engineer @ Movio <span class="flag-icon flag-icon-nz"></span> since Dec 2012</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Lead port of high throughput application to microservice architecture.</div>
+            <div class="job-tech">Go, Scala, Kafka, Cassandra</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Set up monitoring and alerting platform.</div>
+            <div class="job-tech">Prometheus, Grafana</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Technical lead for client integration project.</div>
+            <div class="job-tech">Scala, XML, akka</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Lead localization of primary web app.</div>
+            <div class="job-tech">PHP, Scala, Java, XSLT, gettext</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Ported performance critical component to column-oriented database.</div>
+            <div class="job-tech">Scala, PHP, MariaDB, ColumnStore</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-iptego">
+        <div class="job-title">Software Engineer @ IPTEGO <span class="flag-icon flag-icon-de"></span> 16 months</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Developed a application to detect and prevent fraudulent use of VoIP networks.</div>
+            <div class="job-tech">Python, Redis, ZMQ</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Designed and developed web application for monitoring and inspection.</div>
+            <div class="job-tech">Python, Flask, Javascript, ExtJS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-sap-labs">
+        <div class="job-title">Software Engineer @ SAP Labs <span class="flag-icon flag-icon-us"></span> 3 months, internship</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Developed compiler-frontend and AST transformer for research language.</div>
+            <div class="job-tech">Newspeak/Smalltalk, Javascript</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-finnlabs">
+        <div class="job-title">Software Engineer @ Finnlabs  <span class="flag-icon flag-icon-de"></span> 16 months, part-time</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Transformation of semi-structured dictionary data for optimized search access on pons.eu.</div>
+            <div class="job-tech">XSLT, Java, Ruby</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Developed web application interface for community-driven dictionary.</div>
+            <div class="job-tech">Ruby, Ruby on Rails</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-sap-research">
+        <div class="job-title">Software Engineer @ SAP Research <span class="flag-icon flag-icon-ch"></span> 7 months, internship</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Developed a mobile phone application to enable end-user access to SAP business services.</div>
+            <div class="job-tech">Java, XML, Android</div>
+          </div>
+          <div class="job-desc-line">
+            <div>Implemented an OASIS standard-compliant web-service messaging component.</div>
+            <div class="job-tech">Java, SAP Netweaver JEE</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-wpi">
+        <div class="job-title">Web Developer @ Worcester Polytechnic Institute <span class="flag-icon flag-icon-us"></span> 13 months, part-time</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Developed web interface to manage sensor readings from fire safety experiments.</div>
+            <div class="job-tech">Java, Oracle DB, JSP/Servlets</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-rotes-kreuz">
+        <div class="job-title">Zivildienstleistender @ Rotes Kreuz <span class="flag-icon flag-icon-de"></span> 10 months</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Assisted transport as community service.</div>
+            <div class="job-tech"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job-entry" id="job-charles-river-labs">
+        <div class="job-title">Software Engineer @ Charles River Laboratories <span class="flag-icon flag-icon-us"></span> 2 months</div>
+        <div class="job-desc">
+          <div class="job-desc-line">
+            <div>Designed and implemented a phone directory with support.</div>
+            <div class="job-tech">Java, JSP/Servlets, MS SQL Server, MS Access</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="degree-title">Academia</div>
+
+      <div class="degree-entry" id="edu-msc">
+        M.Sc. @ Hasso Plattner Institut <span class="flag-icon flag-icon-de"></span> in 2010
+      </div>
+      <div class="degree-entry" id="edu-bsc">
+        B.Sc. @ Worcester Polytechnic Institute <span class="flag-icon flag-icon-us"></span> in 2007
+      </div>
+
+      <div id="academic-title"></div>
+
+      <div class="academic-entry" id="edu-phd">
+        Ph. D. candidate @ Hasso Plattner Institut <span class="flag-icon flag-icon-de"></span> 10 months
+      </div>
+
+      <div class="academic-entry" id="edu-ta">
+        Teaching Assistant @ Hasso Plattner Institut <span class="flag-icon flag-icon-de"></span> 6 months
+      </div>
+
+      <div class="academic-entry" id="edu-ra">
+        Research Assistant @ Brown University <span class="flag-icon flag-icon-us"></span> 2 months
+      </div>
+
     </div>
+
+    <div id="bar">
+	    <div id="name-container">
+        felix geller
+	    </div>
+	    <div id="link-container">
+        <script type="text/javascript" language="javascript">
+          <!--
+              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+              // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+              // This code is freeware provided these four comment lines remain intact
+              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+              { coded = "xS@7mj.ng"; key = "Kae5dU6nupOGfy20oYHRNxEmPgI31CFq7WSBDM8lr4cVh9ZzjXvskbwtQJALiT"; shift=coded.length; link="";
+              for (i=0; i<coded.length; i++) {
+                if (key.indexOf(coded.charAt(i))==-1) {ltr = coded.charAt(i); link += (ltr);}
+                else {ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length; link += (key.charAt(ltr));}
+              } ; document.write("<a href='mailto:"+link+"'>@</a>")
+              }
+              //-->
+        </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+         &middot;
+	      <a href="https://beltmogul.me">blog</a> &middot;
+	      <a href="http://github.com/fgeller">github</a> &middot;
+	      <a href="https://www.strava.com/athletes/722824/">strava</a> &middot;
+	      <a href="https://nz.linkedin.com/in/felixgeller">linkedin</a>
+	    </div>
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
   </body>
 
 </html>
