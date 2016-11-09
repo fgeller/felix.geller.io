@@ -1,5 +1,53 @@
+var el = function (id) {
+    return document.getElementById(id);
+};
+
+var tech = [
+    "java",
+    "scala",
+    "go",
+    "javascript",
+    "python",
+    "ruby",
+    "php",
+    "mariadb",
+    "kafka",
+    "columnstore",
+    "cassandra",
+    "redis",
+    "docker",
+    "kubernetes",
+    "emacs",
+    "coreutils",
+    "git",
+    "jenkins",
+    "xml",
+    "json"
+];
+
+tech.forEach(function (t) {
+    d3
+        .selectAll(".tech-"+t)
+        .on("mouseover", function () { d3.selectAll(".tech-"+t).classed("selected", true);})
+        .on("mouseout", function () { d3.selectAll(".tech-"+t).classed("selected", false);})
+        .on("click", function () {
+            d3.selectAll("span.tech").classed("selected", false);
+            d3.selectAll(".tech-"+t).classed("selected", true);
+        });
+});
+
 var drawTimeline = function() {
-    var tlHeight = document.getElementById('listing').clientHeight-12;
+    var tlMarginTop = el("bar").clientHeight+5;
+    var tlHeight =window.innerHeight-tlMarginTop;
+    var tlWidth = 100;
+    var margin = (window.innerWidth-580)/2;
+    //parseInt(window.getComputedStyle(el("listing"))["margin-left"], 10);
+
+    var right = (margin-tlWidth-10)+"px";
+    var top = tlMarginTop+"px";
+    el("timeline-container").style.top = top;
+    el("timeline-container").style.right = right;
+
     var jobWidth = 5;
     var eduWidth = 5;
     var scl = d3.scaleTime().domain([new Date(), new Date(2003, 7, 1)]).range([0, tlHeight]);

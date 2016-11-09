@@ -4,70 +4,137 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>felix geller - resume</title>
+    <title>felix geller</title>
 
     <link rel="stylesheet" href="app.css">
     <script src="d3.js" charset="utf-8"></script>
     <link href="css/flag-icon.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="body">
     <div id="listing">
       <div id="timeline-container"><svg id="timeline"></svg></div>
 
       <div id="summary">
-        <div>I'm a passionate software engineer and avid runner, always looking for a new challenge.</div>
-        <div>I enjoy being part of a great team and aim for simplicity in my solutions.</div>
+        <div>
+          I'm passionate about building a great team and simplicity in my solutions.
+          My family and <a href="https://www.strava.com/athletes/722824/">running</a> help me to stay in balance while always looking for a new <a href="http://www.taraweraultra.co.nz/">challenge</a>.
+        </div>
       </div>
+
+      <div id="tech-title">Tech</div>
+      <div id="tech">
+        <div id="tech-lang">
+          <div class="tech-skill">
+            <div><span class="tech tech-java">Java</span></div>
+            <div><span class="tech tech-scala">Scala</span></div>
+            <div><span class="tech tech-go">Go</span></div>
+            <div><span class="tech tech-javascript">Javascript</span></div>
+            <div><span class="tech tech-python">Python</span></div>
+            <div><span class="tech tech-ruby">Ruby</span></div>
+            <div><span class="tech tech-php">PHP</span></div>
+          </div>
+          <div class="tech-exp">
+            <div>######</div>
+            <div>####</div>
+            <div>##</div>
+            <div>##</div>
+            <div>##</div>
+            <div>#</div>
+            <div>#</div>
+          </div>
+        </div>
+        <div id="tech-devops">
+          <div class="tech-skill">
+            <div><span class="tech tech-mariadb">MariaDB</span></div>
+            <div><span class="tech tech-kafka">Kafka</span></div>
+            <div><span class="tech tech-columnstore">ColumnStore</span></div>
+            <div><span class="tech tech-cassandra">Cassandra</span></div>
+            <div><span class="tech tech-redis">Redis</span></div>
+            <div><span class="tech tech-docker">Docker</span></div>
+            <div><span class="tech tech-kubernetes">Kubernetes</span></div>
+          </div>
+          <div class="tech-exp">
+            <div>####</div>
+            <div>##</div>
+            <div>##</div>
+            <div>##</div>
+            <div>##</div>
+            <div>##</div>
+            <div>#</div>
+          </div>
+        </div>
+        <div id="tech-other">
+          <div class="tech-skill">
+            <div><span class="tech tech-emacs">Emacs</span></div>
+            <div><span class="tech tech-coreutils">coreutils</span></div>
+            <div><span class="tech tech-git">git</span></div>
+            <div><span class="tech tech-jenkins">Jenkins</span></div>
+            <div><span class="tech tech-xml">XML tools</span></div>
+            <div><span class="tech tech-json">JSON tools</span></div>
+            <div></div>
+          </div>
+          <div class="tech-exp">
+            <div>########</div>
+            <div>#####</div>
+            <div>#####</div>
+            <div>####</div>
+            <div>####</div>
+            <div>###</div>
+            <div id="tech-explanation"># ~ one year of professional experience</div>
+          </div>
+        </div>
+      </div>
+
 
       <div id="job-title">Professional experience</div>
 
       <div class="job-entry" id="job-movio">
-        <div class="job-title">Team Lead Software Engineer @ Movio <span class="flag-icon flag-icon-nz"></span> since Dec 2012</div>
+        <div class="job-title">Team Lead Software Engineer @ <a href="http://movio.co">Movio</a> <span class="flag-icon flag-icon-nz"></span> since Dec 2012</div>
         <div class="job-desc">
           <div class="job-desc-line">
             <div>Lead port of high throughput application to microservice architecture.</div>
-            <div class="job-tech">Go, Scala, Kafka, Cassandra</div>
+            <div class="job-tech"><span class="tech tech-go">Go</span>, <span class="tech tech-scala">Scala</span>, <span class="tech tech-json">JSON</span>, <span class="tech tech-kafka">Kafka</span>, <span class="tech tech-cassandra">Cassandra</span>, <span class="tech tech-docker">Docker</span>, <span class="tech tech-kubernetes">Kubernetes</span></div>
           </div>
           <div class="job-desc-line">
-            <div>Set up monitoring and alerting platform.</div>
-            <div class="job-tech">Prometheus, Grafana</div>
+            <div>Set up monitoring and alerting platform for microservice setting.</div>
+            <div class="job-tech">Prometheus, Grafana, <span class="tech tech-docker">Docker</span>, <span class="tech tech-kubernetes">Kubernetes</span></div>
           </div>
           <div class="job-desc-line">
-            <div>Technical lead for client integration project.</div>
-            <div class="job-tech">Scala, XML, akka</div>
+            <div>Technical lead for large client integration project.</div>
+            <div class="job-tech"><span class="tech tech-scala">Scala</span>, <span class="tech tech-xml">XML</span>, akka</div>
           </div>
           <div class="job-desc-line">
-            <div>Lead localization of primary web app.</div>
-            <div class="job-tech">PHP, Scala, Java, XSLT, gettext</div>
+            <div>Lead web interface localization of main web application.</div>
+            <div class="job-tech"><span class="tech tech-php">PHP</span>, <span class="tech tech-scala">Scala</span>, <span class="tech tech-java">Java</span>, <span class="tech tech-xml">XSLT</span>, gettext</div>
           </div>
           <div class="job-desc-line">
             <div>Ported performance critical component to column-oriented database.</div>
-            <div class="job-tech">Scala, PHP, MariaDB, ColumnStore</div>
+            <div class="job-tech"><span class="tech tech-scala">Scala</span>, <span class="tech tech-php">PHP</span>, <span class="tech tech-mariadb">MariaDB</span>, <span class="tech tech-columnstore">ColumnStore</span></div>
           </div>
         </div>
       </div>
 
       <div class="job-entry" id="job-iptego">
-        <div class="job-title">Software Engineer @ IPTEGO <span class="flag-icon flag-icon-de"></span> 16 months</div>
+        <div class="job-title">Software Engineer @ IPTEGO (now part of Oracle) <span class="flag-icon flag-icon-de"></span> 16 months</div>
         <div class="job-desc">
           <div class="job-desc-line">
-            <div>Developed a application to detect and prevent fraudulent use of VoIP networks.</div>
-            <div class="job-tech">Python, Redis, ZMQ</div>
+            <div>Designed and developed web application for monitoring and inspection of possible fraud cases.</div>
+            <div class="job-tech"><span class="tech tech-python">Python</span>, Flask, <span class="tech tech-javascript">Javascript</span>, ExtJS</div>
           </div>
           <div class="job-desc-line">
-            <div>Designed and developed web application for monitoring and inspection.</div>
-            <div class="job-tech">Python, Flask, Javascript, ExtJS</div>
+            <div>Developed a multi-process application to detect and prevent fraudulent use of VoIP networks.</div>
+            <div class="job-tech"><span class="tech tech-python">Python</span>, <span class="tech tech-redis">Redis</span>, ZMQ</div>
           </div>
         </div>
       </div>
 
       <div class="job-entry" id="job-sap-labs">
-        <div class="job-title">Software Engineer @ SAP Labs <span class="flag-icon flag-icon-us"></span> 3 months, internship</div>
+        <div class="job-title">Software Engineer @ <a href="http://go.sap.com/about/careers/who-we-are/locations/palo-alto.html">SAP Labs</a> <span class="flag-icon flag-icon-us"></span> 3 months, internship</div>
         <div class="job-desc">
           <div class="job-desc-line">
             <div>Developed compiler-frontend and AST transformer for research language.</div>
-            <div class="job-tech">Newspeak/Smalltalk, Javascript</div>
+            <div class="job-tech">Newspeak/Smalltalk, <span class="tech tech-javascript">Javascript</span></div>
           </div>
         </div>
       </div>
@@ -77,46 +144,42 @@
         <div class="job-desc">
           <div class="job-desc-line">
             <div>Transformation of semi-structured dictionary data for optimized search access on pons.eu.</div>
-            <div class="job-tech">XSLT, Java, Ruby</div>
+            <div class="job-tech"><span class="tech tech-xml">XSLT</span>, <span class="tech tech-java">Java</span>, <span class="tech tech-ruby">Ruby</span></div>
           </div>
           <div class="job-desc-line">
             <div>Developed web application interface for community-driven dictionary.</div>
-            <div class="job-tech">Ruby, Ruby on Rails</div>
+            <div class="job-tech"><span class="tech tech-ruby">Ruby</span>, Ruby on Rails</div>
           </div>
         </div>
       </div>
 
       <div class="job-entry" id="job-sap-research">
-        <div class="job-title">Software Engineer @ SAP Research <span class="flag-icon flag-icon-ch"></span> 7 months, internship</div>
+        <div class="job-title">Software Engineer @ <a href="https://icn.sap.com/home.html#address_4">SAP Research</a> <span class="flag-icon flag-icon-ch"></span> 7 months, internship</div>
         <div class="job-desc">
           <div class="job-desc-line">
             <div>Developed a mobile phone application to enable end-user access to SAP business services.</div>
-            <div class="job-tech">Java, XML, Android</div>
+            <div class="job-tech"><span class="tech tech-java">Java</span>, <span class="tech tech-xml">XML</span>, Android</div>
           </div>
           <div class="job-desc-line">
             <div>Implemented an OASIS standard-compliant web-service messaging component.</div>
-            <div class="job-tech">Java, SAP Netweaver JEE</div>
+            <div class="job-tech"><span class="tech tech-java">Java</span>, SAP Netweaver JEE</div>
           </div>
         </div>
       </div>
 
       <div class="job-entry" id="job-wpi">
-        <div class="job-title">Web Developer @ Worcester Polytechnic Institute <span class="flag-icon flag-icon-us"></span> 13 months, part-time</div>
+        <div class="job-title">Web Developer @ <a href="http://wpi.edu">Worcester Polytechnic Institute</a> <span class="flag-icon flag-icon-us"></span> 13 months, part-time</div>
         <div class="job-desc">
           <div class="job-desc-line">
             <div>Developed web interface to manage sensor readings from fire safety experiments.</div>
-            <div class="job-tech">Java, Oracle DB, JSP/Servlets</div>
+            <div class="job-tech"><span class="tech tech-java">Java</span>, Oracle DB, JSP/Servlets</div>
           </div>
         </div>
       </div>
 
       <div class="job-entry" id="job-rotes-kreuz">
-        <div class="job-title">Zivildienstleistender @ Rotes Kreuz <span class="flag-icon flag-icon-de"></span> 10 months</div>
+        <div class="job-title">Assisted transport as community service @ Red Cross <span class="flag-icon flag-icon-de"></span> 10 months</div>
         <div class="job-desc">
-          <div class="job-desc-line">
-            <div>Assisted transport as community service.</div>
-            <div class="job-tech"></div>
-          </div>
         </div>
       </div>
 
@@ -125,7 +188,7 @@
         <div class="job-desc">
           <div class="job-desc-line">
             <div>Designed and implemented a phone directory with support.</div>
-            <div class="job-tech">Java, JSP/Servlets, MS SQL Server, MS Access</div>
+            <div class="job-tech"><span class="tech tech-java">Java</span>, JSP/Servlets, MS SQL Server, MS Access</div>
           </div>
         </div>
       </div>
@@ -133,53 +196,55 @@
       <div id="degree-title">Academia</div>
 
       <div class="degree-entry" id="edu-msc">
-        M.Sc. @ Hasso Plattner Institut <span class="flag-icon flag-icon-de"></span> in 2010
+        M.Sc. @ <a href="https://hpi.de">Hasso Plattner Institut</a> <span class="flag-icon flag-icon-de"></span> in 2010
       </div>
       <div class="degree-entry" id="edu-bsc">
-        B.Sc. @ Worcester Polytechnic Institute <span class="flag-icon flag-icon-us"></span> in 2007
+        B.Sc. @ <a href="http://wpi.edu">Worcester Polytechnic Institute</a> <span class="flag-icon flag-icon-us"></span> in 2007
       </div>
 
       <div id="academic-title"></div>
 
       <div class="academic-entry" id="edu-phd">
-        Ph. D. candidate @ Hasso Plattner Institut <span class="flag-icon flag-icon-de"></span> 10 months
+        Ph. D. candidate @ <a href="https://hpi.de">Hasso Plattner Institut</a> <span class="flag-icon flag-icon-de"></span> 10 months
       </div>
 
       <div class="academic-entry" id="edu-ta">
-        Teaching Assistant @ Hasso Plattner Institut <span class="flag-icon flag-icon-de"></span> 6 months
+        Teaching Assistant @ <a href="https://hpi.de">Hasso Plattner Institut</a> <span class="flag-icon flag-icon-de"></span> 6 months
       </div>
 
       <div class="academic-entry" id="edu-ra">
-        Research Assistant @ Brown University <span class="flag-icon flag-icon-us"></span> 2 months
+        Research Assistant @ <a href="http://go.sap.com/about/careers/who-we-are/locations/palo-alto.html">Brown University</a> <span class="flag-icon flag-icon-us"></span> 2 months
       </div>
 
     </div>
 
     <div id="bar">
-	    <div id="name-container">
-        felix geller
-	    </div>
-	    <div id="link-container">
-        <script type="text/javascript" language="javascript">
-          <!--
-              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
-              // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-              // This code is freeware provided these four comment lines remain intact
-              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
-              { coded = "xS@7mj.ng"; key = "Kae5dU6nupOGfy20oYHRNxEmPgI31CFq7WSBDM8lr4cVh9ZzjXvskbwtQJALiT"; shift=coded.length; link="";
-              for (i=0; i<coded.length; i++) {
+      <div id="bar-content">
+	      <div id="name-container">
+          felix geller
+	      </div>
+	      <div id="link-container">
+          <script type="text/javascript" language="javascript">
+            <!--
+                // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+                // This code is freeware provided these four comment lines remain intact
+                // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+                { coded = "xS@7mj.ng"; key = "Kae5dU6nupOGfy20oYHRNxEmPgI31CFq7WSBDM8lr4cVh9ZzjXvskbwtQJALiT"; shift=coded.length; link="";
+                for (i=0; i<coded.length; i++) {
                 if (key.indexOf(coded.charAt(i))==-1) {ltr = coded.charAt(i); link += (ltr);}
                 else {ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length; link += (key.charAt(ltr));}
-              } ; document.write("<a href='mailto:"+link+"'>@</a>")
-              }
-              //-->
-        </script><noscript>Sorry, you need Javascript on to email me.</noscript>
-         &middot;
-	      <a href="https://beltmogul.me">blog</a> &middot;
-	      <a href="http://github.com/fgeller">github</a> &middot;
-	      <a href="https://www.strava.com/athletes/722824/">strava</a> &middot;
-	      <a href="https://nz.linkedin.com/in/felixgeller">linkedin</a>
-	    </div>
+                } ; document.write("<a href='mailto:"+link+"'>@</a>")
+                }
+                //-->
+          </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+          &middot;
+	        <a href="https://beltmogul.me">blog</a> &middot;
+	        <a href="http://github.com/fgeller">github</a> &middot;
+	        <a href="https://www.strava.com/athletes/722824/">strava</a> &middot;
+	        <a href="https://nz.linkedin.com/in/felixgeller">linkedin</a>
+	      </div>
+      </div>
     </div>
 
     <script src="app.js" charset="utf-8"></script>
