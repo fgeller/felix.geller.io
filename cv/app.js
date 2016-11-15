@@ -5,6 +5,7 @@ var el = function (id) {
 var tech = [
     "java",
     "scala",
+    "akka",
     "go",
     "javascript",
     "python",
@@ -22,7 +23,14 @@ var tech = [
     "git",
     "jenkins",
     "xml",
-    "json"
+    "prometheus",
+    "grafana",
+    "gettext",
+    "zmq",
+    "android",
+    "oracledb",
+    "mssql",
+    "msaccess"
 ];
 
 tech.forEach(function (t) {
