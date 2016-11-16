@@ -23,6 +23,7 @@ var tech = [
     "git",
     "jenkins",
     "xml",
+    "json",
     "prometheus",
     "grafana",
     "gettext",
