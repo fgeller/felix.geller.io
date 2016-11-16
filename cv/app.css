@@ -196,7 +196,8 @@ img.tech-logo {
     padding: 1px;
     padding-bottom: 4px;
     vertical-align: middle;
-    display: inline;
+    /* display: inline; */
+    display: none;
 }
 
 #job-title {
