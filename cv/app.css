@@ -41,6 +41,7 @@ a:hover {
     width: 100%;
     padding-left: 8px;
     margin: 0px;
+    margin-top: 8px;
     padding: 0px;
     text-align: center;
     position: fixed;
@@ -85,7 +86,7 @@ a:hover {
 #listing {
     width: 580px;
     margin: 0 auto;
-    top: 32px;
+    top: 40px;
     position: relative;
     padding-bottom: 12px;
 }

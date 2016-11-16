@@ -46,7 +46,7 @@ tech.forEach(function (t) {
 });
 
 var drawTimeline = function() {
-    var tlMarginTop = el("bar").clientHeight+5;
+    var tlMarginTop = el("bar").clientHeight+5+8;
     var tlHeight =window.innerHeight-tlMarginTop;
     var tlWidth = 100;
     var margin = (window.innerWidth-580)/2;
