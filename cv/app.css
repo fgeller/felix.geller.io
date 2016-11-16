@@ -193,11 +193,9 @@ a:hover {
 
 img.tech-logo {
     height: 12px;
-    padding: 1px;
-    padding-bottom: 4px;
-    vertical-align: middle;
-    /* display: inline; */
-    display: none;
+    padding-right: 4px;
+    /* vertical-align: middle; */
+    display: inline;
 }
 
 #job-title {
