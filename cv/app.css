@@ -75,6 +75,13 @@ a:hover {
     flex: 1;
 }
 
+#credits {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding-bottom: 20px;
+}
+
 #listing {
     width: 580px;
     margin: 0 auto;
