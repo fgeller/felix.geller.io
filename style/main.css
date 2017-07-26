@@ -8,10 +8,13 @@ html {
 
 body {
     font-family: Roboto, sans-serif;
-    margin: 2em;
+    margin: 0;
     text-align: center;
 }
 
+i {
+    padding: 5pt;
+}
 a {
     color: #2c3e50;
     text-decoration: none;
@@ -21,18 +24,28 @@ a:hover {
     color: #4CAF50;
 }
 
-div {
-    margin: 1em;
+#container {
+    background-color: rgba(250, 250, 250, 0.8);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0pt;
+    display: flex;
+    align-items: center;
+    color: #2c3e50;
 }
 
 #link-container {
-    background-color: #fafafa; /*rgba(25, 31, 71, 0.8);*/
-    border-radius: 12pt;
-    padding: .75em;
-    margin: 0 auto;
-    max-width: 200pt;
-    display: inline-block;
-    font-size: 12pt;
+    width: 100%;
+    text-align: right;
+    font-size: 18pt;
+    margin-right: 9pt;
+}
+
+#name-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    font-size: 18pt;
     text-align: left;
-    line-height: 1.3em;
 }
