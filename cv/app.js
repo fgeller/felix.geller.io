@@ -3,35 +3,38 @@ var el = function (id) {
 };
 
 var tech = [
-    "java",
-    "scala",
     "akka",
-    "go",
-    "javascript",
-    "python",
-    "ruby",
-    "php",
-    "mariadb",
-    "kafka",
-    "columnstore",
-    "cassandra",
-    "redis",
-    "docker",
-    "kubernetes",
-    "emacs",
-    "coreutils",
-    "git",
-    "jenkins",
-    "xml",
-    "json",
-    "prometheus",
-    "grafana",
-    "gettext",
-    "zmq",
     "android",
-    "oracledb",
+    "cassandra",
+    "columnstore",
+    "coreutils",
+    "docker",
+    "elasticsearch",
+    "emacs",
+    "gettext",
+    "git",
+    "go",
+    "grafana",
+    "java",
+    "javascript",
+    "jenkins",
+    "json",
+    "kafka",
+    "kubernetes",
+    "mariadb",
+    "msaccess",
     "mssql",
-    "msaccess"
+    "oracledb",
+    "php",
+    "prometheus",
+    "protobuf",
+    "python",
+    "redis",
+    "ruby",
+    "scala",
+    "travis",
+    "xml",
+    "zmq"
 ];
 
 tech.forEach(function (t) {
@@ -131,9 +134,15 @@ var drawTimeline = function() {
 
 var jobs = [
     {
+        name: "Independent",
+        start: new Date(2017, 7, 31),
+        end: new Date(),
+        id: "independent"
+    },
+    {
         name: "Movio",
         start: new Date(2012, 12, 10),
-        end: new Date(),
+        end: new Date(2017, 7, 31),
         id: "movio"
     },
     {

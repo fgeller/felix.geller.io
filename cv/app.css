@@ -1,19 +1,19 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Roboto, Arial, sans-serif;
     color: black;
     font-size: 14px;
-    padding: 8px;
     margin: 0px;
 }
 
 #bar a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding-bottom: 2px;
 }
 
 #bar a:hover {
-    color: #F44336;
+    color: #59b961;
+    /* color: #F44336; */
     padding-bottom: 2px;
 }
 
@@ -22,7 +22,8 @@ a {
 }
 
 a:hover {
-    color: #F44336;
+    /* color: #F44336; */
+    color: #59b961;
     text-decoration: none;
 }
 
@@ -37,6 +38,7 @@ a:hover {
 }
 
 #bar {
+    background-color: #000;
     z-index: 999;
     width: 100%;
     padding-left: 8px;
@@ -49,31 +51,27 @@ a:hover {
 }
 
 #bar-content {
-    width: 580px;
-    background: white;
-    margin: 0 auto;
-    padding-top: 8px;
+    max-width: 375px;
+    background: black;
     display: flex;
     align-items: center;
 }
 
 #link-container {
-    background-color: #fff;
-    width: 100%;
-    text-align: right;
-    font-size: 17px;
-    margin-right: 10px;
-    flex: 2;
+    padding: 0.3em;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
 }
 
 #name-container {
-    background-color: #fff;
-    width: 100%;
-    font-size: 21px;
+    padding: 0.3em;
+    background-color: #000;
+    font-size: 24px;
     text-align: left;
     line-height: 32px;
-    font-weight: 600;
-    flex: 1;
+    font-weight: 400;
 }
 
 #credits {
@@ -84,17 +82,15 @@ a:hover {
 }
 
 #listing {
-    width: 580px;
-    margin: 0 auto;
+    max-width: 375px;
+    margin: 0.5em;
     top: 40px;
     position: relative;
-    padding-bottom: 12px;
+    border: 1px solid blue;
 }
 
 #listing .job-entry {
-    margin-bottom: 3px;
-    padding: 1px;
-    max-width: 540px;
+    margin-bottom: 1em;
 }
 
 #tech {
@@ -142,7 +138,7 @@ a:hover {
 }
 
 .flag-icon {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 #timeline .selected {
@@ -154,18 +150,48 @@ a:hover {
 }
 
 #listing .job-entry .job-title {
-    margin-bottom: 3px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+}
+
+#listing .job-entry .job-title .job-duration {
+    flex: 1;
+}
+
+#listing .job-entry .job-title .job-title-name {
+    font-size: 16px;
+    font-weight: 500;
+    flex: 2;
+}
+
+#listing .job-entry .job-duration {
+    font-size: 12px;
+    text-align: right;
+    font-weight: 400;
 }
 
 #listing .job-entry .job-desc {
+    /* display: none; */
     margin-top: 4px;
 }
 
+#listing .job-entry-separator {
+    font-size: 24;
+    font-weight: 600;
+    text-align: center;
+    margin: 1em;
+}
+
+#listing .job-desc-line-separator {
+    font-size: 16;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.2em;
+}
+
 .selected {
-    color: #F44336;
+    color: #59b961;
+    /* color: #F44336; */
 }
 
 #listing .job-entry .job-desc .job-tech {
@@ -185,7 +211,7 @@ a:hover {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .tech {
@@ -203,7 +229,7 @@ img.tech-logo {
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #academic-title {
@@ -216,7 +242,7 @@ img.tech-logo {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #timeline-container {
@@ -229,6 +255,7 @@ img.tech-logo {
 }
 
 #timeline {
+    display: none;
     position: relative;
     right: 0px;
     top: 0px;

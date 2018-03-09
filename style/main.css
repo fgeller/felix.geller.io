@@ -26,26 +26,45 @@ a:hover {
 
 #container {
     background-color: rgba(250, 250, 250, 0.8);
-    width: 100%;
+    width: 180px;
+    height: 100%;
     margin: 0;
-    text-align: center;
+    padding: 0.5em;
     position: fixed;
-    bottom: 0pt;
-    display: flex;
-    align-items: center;
+    top: 0;
+    left: 0;
     color: #2c3e50;
+    text-align: center;
+    font-size: 18pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #link-container {
     width: 100%;
-    text-align: right;
-    font-size: 18pt;
-    margin-right: 9pt;
+    text-align: left;
 }
 
-#name-container {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    width: 100%;
-    font-size: 18pt;
-    text-align: left;
+.link-row {
+    display: flex;
+    margin: 0.1em;
+    align-items: center;
+}
+
+.link-symbol {
+    width: 36pt
+}
+
+@media (max-width: 1024px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #link-container {
+        text-align: center;
+    }
+
+    #name-container {
+        text-align: center;
+    }
+
 }

@@ -3,19 +3,20 @@ var resume = {
     summary: "Fluent in German and English, intermediate in French. Avid long-distance runner.",
     email: "fgeller-at-gmail-dot-com",
     github: "https://github.com/fgeller",
-    linkedin: "https://www.linkedin.com/in/felixgeller",
     professionalExperience: [
 	{
 	    start: new Date("2012-12-10"),
+	    title: "Independent Software Engineer",
+	    role: "Full-time",
+	    location: "Bamberg, DE",
+	},
+	{
+	  start: new Date("2012-12-10"),
+    end: new Date("2017-07-31"),
 	    title: "Software Engineer",
 	    role: "Full-time",
 	    company: "Movio Ltd.",
 	    location: "Auckland, NZ",
-	    summary: [
-		"Localized primary web application to enable support for new languages.",
-		"Ported performance critical application component to column-oriented database.",
-		"Technologies include Scala, Java, PHP, gettext, akka, Apache Cassandra, InfiniDB, MySQL.",
-	    ],
 	},
 	{
 	    start: new Date("2011-09-01"),

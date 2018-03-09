@@ -5,13 +5,12 @@
     <meta charset="utf-8"></meta>
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <title>/</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style/font-awesome.min.css">
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/main.css" />
     <script type="text/javascript">
       var html = document.getElementsByTagName('html')[0];
-      var images = ['grass.jpg', 'glowing.jpg', 'sunset.jpg', 'tau.jpg', 'leaving.jpg', 'quiet.jpg', 'watching.jpg'];
+      var images = ['grass.jpg', 'glowing.jpg', 'sunset.jpg', 'tau.jpg', 'leaving.jpg', 'watching.jpg'];
       var index = Math.round(Math.random() * (images.length-1));
       html.style['background'] = 'url(\'../i/' + images[index] + '\') no-repeat center center fixed';
       html.style['-webkit-background-size'] = 'cover';
@@ -22,17 +21,38 @@
   </head>
 
   <body>
-      <div id="container">
-	  <div id="name-container">
-	      
-	  </div>
-	  <div id="link-container">
-	      <a href="https://beltmogul.me"><i class="fa fa-rss" aria-hidden="true"></i></a>
-	      <a href="https://geller.io/cv/"><i class="fa fa-child" aria-hidden="true"></i></a>
-	      <a href="http://github.com/fgeller"><i class="fa fa-github" aria-hidden="true"></i></a>
-	      <a href="https://twitter.com/fgeller"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-	  </div>
-      </div>
+    <div id="container">
+	    <div id="link-container">
+
+        <a href="https://beltmogul.me">
+          <div class="link-row">
+            <div class="link-symbol">
+              <i class="fa fa-rss" aria-hidden="true"></i>
+            </div>
+            <div class="link-name">blog</div>
+          </div>
+        </a>
+
+        <a href="https://geller.io/cv/">
+          <div class="link-row">
+            <div class="link-symbol">
+              <i class="fa fa-child" aria-hidden="true"></i>
+            </div>
+            <div class="link-name">cv</div>
+          </div>
+        </a>
+
+        <a href="http://github.com/fgeller">
+          <div class="link-row">
+            <div class="link-symbol">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            <div class="link-name">github</div>
+          </div>
+        </a>
+
+	    </div>
+    </div>
   </body>
 
 </html>
